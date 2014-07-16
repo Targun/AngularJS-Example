@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<p>Here are the list items from the homeCtrl.js</p>
+<ul>
+  <li ng-repeat="thing in items">{{thing}}</li>
+</ul>
+
+<p>Type to see the input action</p>
+
+<input tyle="text" ng-model="myValue" placeholder="Type Something Here">
+<h2>{{myValue}}</h2>
+
+<p>Select from the list items</p>
+<select ng-model="selectedValue" ng-options="value for value in items"></select>

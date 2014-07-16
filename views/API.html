@@ -1,0 +1,17 @@
+<h1>{{title}}</h1>
+
+<p>Current data from friends.json</p>
+<ul>
+	<li ng-repeat="friend in friends">
+	{{friend.name}}: {{friend.age}}
+	</li>
+</ul>
+
+<p>Real time change in data!</p>
+<ul>
+	<li ng-repeat="friend in friends">
+		<input type="text" ng-model="friend.name">	
+		<input type="text" ng-model="friend.age">
+		<button ng-click="friends.splice($index,1)" class="btn btn-danger">-</button>
+	</li>
+</ul>
